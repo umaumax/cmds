@@ -13,7 +13,7 @@ mv diff-filter <path>
 ## how to use
 ```
 alias find-dotfiles='find . -name ".*" -not -name ".git" | sed "s:\./\|^\.$::g" | grep .'
-alias git-filter='diff-filter -F, -v file=<(git ls-files)'
+alias git-filter='diff-filter -v file=<(git ls-files)'
 ```
 
 ```
