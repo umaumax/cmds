@@ -1,4 +1,4 @@
-#!/usr/bin/env awk -f
+#!/usr/bin/awk -f
 BEGIN {
 	DATA="|";
 	CAT = "cat " file;
@@ -11,6 +11,6 @@ BEGIN {
 	if (filter[$0]) {
 		print "\033[0;34m" " " $0 "\033[0m"
 	} else {
-	print "\033[0;31m" "-" $0 "\033[0m"
-}
+		print "\033[0;31m" "-" $0 "\033[0m"
+	}
 }
