@@ -4,8 +4,7 @@ a filter command like diff
 
 ## how to install
 ```
-wget https://raw.githubusercontent.com/umaumax/diff-filter/master/diff-filter.awk
-mv diff-filter.awk diff-filter
+wget https://raw.githubusercontent.com/umaumax/diff-filter/master/diff-filter
 chmod u+x diff-filter
 mv diff-filter <path>
 ```
