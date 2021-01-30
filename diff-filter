@@ -1,5 +1,10 @@
 #!/usr/bin/awk -f
 BEGIN {
+	if (file == "") {
+		print "e.g."
+		print "find . -name '*' -not -name '.git' | sed -E 's:\\./|^\\.$::g' | grep . | diff-filter -v file=<(git ls-files)"
+		exit 1
+	}
 	DATA="|";
 	CAT = "cat " file;
 	while ((CAT | getline) > 0) {
